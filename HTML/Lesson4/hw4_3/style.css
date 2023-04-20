@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.form {
+    width: 40vw;
+    max-width: 500px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -10px;
+}
+.flex .form__item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.form__item {
+    display: block;
+    margin-bottom: 35px;
+    width: 100%;
+}
+.form__label {
+    font-size: 15px;
+    color: black;
+}
+.form__input {
+    width: 100%;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #808080;
+}
+input::placeholder {
+    color: #a29dad;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    background: rgb(237,181,27);
+    background: linear-gradient(0deg, rgba(237,181,27,1) 0%, rgba(247,228,1,1) 100%);
+    border: 1px solid #edb51b;
+    padding: 10px 20px;
+    min-width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #b2c5c5;
+
+}
+
+p {
+    color: #808080;
+}
+
+p > a {
+    color: black;
+    text-decoration: none;
+}

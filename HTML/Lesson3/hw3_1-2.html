@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3_1-2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        body {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2em;
+            color: #F5F5F5;
+            text-align: center;
+            margin: 0;
+        }
+        nav {
+            height: 11vh;
+            background-color: #7972c3;
+        }
+        section {
+            width: 33.3333vw;
+            background-color: #9f9dd2;
+        }
+        section:nth-child(2) {
+            background-color: #6d6aaf;
+        }
+        section:nth-child(3) {
+            background-color: #444269;
+        }
+        footer {
+            height: 11vh;
+            background-color: #1b1a56;
+        }
+        .flex-wrap {
+            display: flex;
+            height: 78vh;
+        }
+        .flex-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+<nav class="flex-content">Nav</nav>
+<div class="flex-wrap">
+    <section class="flex-content">Section</section>
+    <section class="flex-content">Section</section>
+    <section class="flex-content">Section</section>
+</div>
+<footer class="flex-content">Footer</footer>
+</body>
+</html>

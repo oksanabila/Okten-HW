@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW2_3</title>
+    <style>
+        body {
+            margin: 15px;
+        }
+        .flex-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            gap: 15px;
+        }
+        .box {
+            display: flex;
+            background-color: #7972c3;
+            height: 20vh;
+            width: 100%;
+        }
+        .box_big {
+            height: 48vh;
+            background-color: #cbc6ff;
+        }
+        .box_big:first-child {
+            height: 25vh;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="box box_big"></div>
+<div class="flex-wrapper">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+<div class="box box_big"></div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.form-wrap {
+    width: 350px;
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    vertical-align: baseline;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0 0 10px;
+    border: 1px solid #DBDBDB;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+.form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.logo {
+    max-width: 150px;
+    margin: 36px 0 12px 0;
+}
+.btn-wrap {
+    margin: 14px 0;
+}
+.btn {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #0095f6;
+    padding: 7px 16px;
+    border-radius: 8px;
+    border: 1px solid #0095f6;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.btn-link {
+    display: inline-block;
+    font-weight: 600;
+    color: #385185;
+    border: 0;
+    padding: 0;
+    position: relative;
+    background-color: transparent;
+    margin: 8px 0;
+}
+.btn-link__icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    top: 3px;
+    font: inherit;
+    font-size: 100%;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px 0 0;
+    padding: 0;
+    border: 0;
+    background-image: url("facebook.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.link {
+    margin-top: 12px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #00376B;
+}
+.link_light {
+    color: #0095F6;
+    font-weight: 500;
+}
+
+form {
+    width: 100%;
+}
+.form__item {
+    display: block;
+    margin-bottom: 6px;
+}
+.form__input {
+    width: 100%;
+    font-family: inherit;
+    font-size: 13px;
+    padding: 9px 0 7px 9px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    text-overflow: ellipsis;
+}
+
+.separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px 18px 40px;
+    box-sizing: border-box;
+}
+.separator-line {
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+.separator-text {
+    font-weight: 600;
+    color: #737373;
+    margin: 0 18px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
