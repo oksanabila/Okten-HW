@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Lesson 10 Bila</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap');
+        body {
+            font-family: 'Wix Madefor Text', sans-serif;
+            font-size: 18px;
+            color: #2D2F36;
+            margin: 20px 20%;
+        }
+        .grid-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5px;
+            margin-bottom: 5px;
+        }
+        .bordered-item {
+            border: 1px solid #bbb1b1;
+            padding: 10px;
+        }
+        h3, h4 {
+            text-align: center;
+
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            font-family: inherit;
+            font-size: 18px;
+            line-height: 1.3;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            padding: 13px 20px;
+            background-color: #ff9966;
+            border-radius: 100px;
+            border: 2px solid #ff9966;
+            cursor: pointer;
+            box-sizing: border-box;
+            margin: 10px 0;
+            transition: all 0.3s ease-out;
+        }
+        .btn_small {
+            display: inline-block;
+            width: unset;
+            font-size: 15px;
+            line-height: 1;
+            padding: 6px 7px;
+            margin: 0 15%;
+        }
+
+        .btn:hover {
+            background-color: #f7666d;
+            border-color: #f7666d;
+        }
+        .btn_green {
+            background-color: #64c062;
+            border-color: #64c062;
+
+        }
+        .btn_green:hover {
+            background-color: #388c74;
+            border-color: #388c74;
+        }
+        .form-field {
+             display: inline-block;
+             width: 100%;
+             font-size: 18px;
+             padding: 13px 18px;
+            margin: 10px 0;
+             background-color: transparent;
+             border: 2px solid gray;
+             border-radius: 26px;
+             box-sizing: border-box;
+
+         }
+        .d-none {
+            display: none;
+        }
+        .res-item {
+            padding: 10px 0;
+            text-align: center;
+
+        }
+        #objectContainer {
+            margin: 20px;
+            text-align: center;
+        }
+        .obj-item {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body onload="saveSessionInfo()">
+<div class="grid-wrap">
+    <form action="" name="f1" id="f1" class="form bordered-item">
+        <h3>Please fill out the form below</h3>
+        <input class="form-field" type="text" placeholder="name" name="name" required>
+        <input class="form-field" type="text" placeholder="surname" name="surName" required>
+        <input class="form-field" type="text" placeholder="age" name="age" required>
+        <button class="btn btn_green">Submit</button>
+    </form>
+    <section id="formResults" class="bordered-item">
+        <h3 id="resultsTitle" class="d-none">Results obtained</h3>
+    </section>
+    <section class="bordered-item">
+        <h3>Incremental counter</h3>
+        <h4 id="counter">1</h4>
+    </section>
+    <section class="bordered-item">
+        <h3>To record a session, click the button</h3>
+        <button class="btn" onclick="saveSessionInfo()">this button</button>
+    </section>
+    <section class="bordered-item">
+        <p id="text">Текст, якому судилося зникнути</p>
+        <button class="btn" onclick="removeText()">removing button</button>
+    </section>
+    <section class="bordered-item">
+        <h3>Check Age</h3>
+        <form action="" name="f2" id="f2">
+            <input class="form-field" type="text" placeholder="age" name="age" required>
+            <button class="btn btn_green">Check</button>
+        </form>
+    </section>
+</div>
+<section class="bordered-item">
+    <h3>Object List</h3>
+    <div class="grid-wrap">
+        <button id="prevButton" class="btn btn_small btn_green">Prev</button>
+        <button id="nextButton" class="btn btn_small btn_green">Next</button>
+    </div>
+    <div id="objectContainer"></div>
+
+</section>
+</body>
+</html>
+<script src="script.js"></script>
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sessions</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap');
+        body {
+            font-family: 'Wix Madefor Text', sans-serif;
+            font-size: 18px;
+            color: #2D2F36;
+            margin: 20px 20%;
+        }
+    </style>
+</head>
+<body onload="showSessionInfo()">
+<div id="sessions"></div>
+</body>
+</html>
+<script>
+    function showSessionInfo() {
+        let sessionsElement = document.getElementById('sessions');
+        let sessionInfo = JSON.parse(localStorage.getItem('sessions'));
+        if (sessionInfo && sessionsElement) {
+            sessionInfo.forEach(function(session) {
+                let sessionTitle =  document.createElement('h2');
+                sessionTitle.innerText = 'Останнє відвідування сторінки index.html'
+                let sessionElement = document.createElement('div');
+                sessionElement.innerText = `Дата: ${session.date}, Час: ${session.time}`;
+                sessionsElement.appendChild(sessionTitle);
+                sessionsElement.appendChild(sessionElement);
+            });
+        }
+    }
+</script>

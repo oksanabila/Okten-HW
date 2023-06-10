@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Lesson 9 Bila</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text&display=swap');
+        body {
+            font-family: 'Wix Madefor Text', sans-serif;
+        }
+        .item {
+            padding: 5px;
+            margin: 10px 0;
+            color: #1a1c21;
+            width: 50%;
+        }
+        .item:nth-of-type(1) {
+            background: linear-gradient(90deg, rgba(127, 0, 255, 0.6), #e100ff);
+        }
+        .item:nth-of-type(2) {
+            background: linear-gradient(90deg, rgba(0, 188, 208, 0.61), #64c062);
+
+        }
+        .item:nth-of-type(3) {
+            background: linear-gradient(90deg, rgba(255, 153, 102, 0.6), #ff5e62);
+        }
+        .item:nth-of-type(4) {
+            background: linear-gradient(90deg, #fceabb, #f8b500);
+        }
+        .item:nth-of-type(5) {
+            background: linear-gradient(90deg, rgba(31, 162, 255, 0.6), #12d8fa);
+        }
+        .item:nth-of-type(6) {
+            background: linear-gradient(90deg, rgba(251, 78, 120, 0.6), #f7666d);
+        }
+
+        .simpsons-wrap {
+            display: flex;
+            margin: 50px 0;
+        }
+        .member {
+            background-color: #d0b7d5;
+            margin: 5px;
+            padding: 20px;
+        }
+        img {
+            height: 300px;
+            padding: 20px;
+        }
+        .course-item {
+            font-size: 20px;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            border: 3px solid #12d8fa;
+            width: 50%;
+        }
+        .divider {
+            display: flex;
+        }
+        .col-left {
+            color: white;
+            padding: 10px;
+            margin-right: 20px;
+            background: linear-gradient(90deg, rgba(31, 162, 255, 0.6), #12d8fa);
+        }
+        .col-right {
+            color: white;
+            padding: 10px;
+            background: linear-gradient(-90deg, rgba(31, 162, 255, 0.6), #12d8fa);
+        }
+        .modules {}
+    </style>
+</head>
+<body>
+<div id="container"></div>
+<div id="courses"></div>
+<div id="items"></div>
+<div class="simpsons-wrap" id="simpsonsWrap"></div>
+<div class="course-wrap" id="courseWrap"></div>
+</body>
+</html>
+<script src="script.js"></script>
