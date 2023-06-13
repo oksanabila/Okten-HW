@@ -104,7 +104,7 @@ function displayUserPostTitles (userPosts) {
         postItem.innerText = post.title;
         postItem.href = `post-details.html?id=${post.id}`;
 
-        pseudoLink.classList.add('like-link');
+        pseudoLink.classList.add('pseudo-link');
         pseudoLink.innerText = 'See more';
         postItem.appendChild(pseudoLink);
         postList.appendChild(postItem);
