@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post detail info</title>
+    <link href="css/style.css" rel="stylesheet" media="all" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="btn_back-wrap"><a class="btn btn_back" id="backPage">go back</a></div>
+    <h1 class="colourful-title">Post detail information</h1>
+    <section id="postInfo" class="post-info">
+        <h2 class="post__title">
+            <span>Post title: </span>
+            <span id="postTitle"></span>
+        </h2>
+        <div class="grid">
+            <div>
+                <div class="post__detail">
+                    <span>Post author: </span>
+                    <span id="postAuthor"></span>
+                </div>
+                <div class="post__detail">
+                    <span>Post ID: </span>
+                    <span id="postId"></span>
+                </div>
+            </div>
+            <div class="post__body" id="postBody"></div>
+        </div>
+<!--        <div class="flex">-->
+<!--           <div class="post__author">-->
+<!--               <span>Post author: </span>-->
+<!--               <span id="postAuthor"></span>-->
+<!--           </div>-->
+<!--            <div class="post__id">-->
+<!--                <span>Post ID: </span>-->
+<!--                <span id="postId"></span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <p class="post__body" id="postBody"></p>-->
+    </section>
+
+    <h3>Comments</h3>
+    <section class="comments" id="comments"></section>
+</div>
+</body>
+</html>
+<script src="script/post-details.js"></script>
