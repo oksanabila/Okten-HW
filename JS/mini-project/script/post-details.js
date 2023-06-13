@@ -82,14 +82,12 @@ function displayComments(comments) {
     for(let comment of comments) {
         let commentItem = document.createElement('div');
         let commentName = document.createElement('h4');
-        let flex = document.createElement('div');
         let commentEmail = document.createElement('div');
         let commentId = document.createElement('div');
         let commentBody = document.createElement('p');
 
         commentItem.classList.add('comment', 'data-item');
         commentName.classList.add('comment__name');
-        flex.classList.add('flex');
         commentEmail.classList.add('comment__email');
         commentId.classList.add('comment__id');
         commentBody.classList.add('comment__body');
@@ -99,8 +97,7 @@ function displayComments(comments) {
         commentId.innerText = `ID: ${comment.id}`;
         commentBody.innerText = comment.body;
 
-        flex.append(commentEmail, commentId);
-        commentItem.append(commentName, flex, commentBody);
+        commentItem.append(commentName, commentEmail, commentId, commentBody);
         commentsWrap.appendChild(commentItem);
     }
 }

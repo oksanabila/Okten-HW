@@ -272,6 +272,9 @@ h4 {
     font-weight: 300;
 }
 
+.comment__email {
+    margin-bottom: 10px;
+}
 .comment__body {
     margin-bottom: 0;
 }
