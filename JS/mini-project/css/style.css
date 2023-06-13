@@ -202,8 +202,9 @@ h4 {
     padding: 10px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: #F8F8FF;
     text-decoration: none;
     cursor: pointer;
@@ -216,18 +217,13 @@ h4 {
     transition: all 0.3s ease-out;
 }
 
-.link {
-    font-size: 18px;
-    color: rgba(248, 248, 255, 0.8);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(248, 248, 255, 0.8);
+.post-item:hover .pseudo-link {
+    border-color: transparent;
 }
 
-.link:hover {
-    background: linear-gradient(90deg, rgba(153, 82, 224, 0.99), rgba(0, 188, 208, 0.99));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-bottom-color: transparent;
+.pseudo-link {
+    padding-top: 15px;
+    border-bottom: 1px solid white;
 }
 
 .post-info {

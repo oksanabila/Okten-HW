@@ -99,9 +99,14 @@ function displayUserPostTitles (userPosts) {
 
     for(let post of userPosts) {
         let postItem = document.createElement('a');
+        let pseudoLink = document.createElement('span');
         postItem.classList.add('post-item', 'data-item');
         postItem.innerText = post.title;
         postItem.href = `post-details.html?id=${post.id}`;
+
+        pseudoLink.classList.add('like-link');
+        pseudoLink.innerText = 'See more';
+        postItem.appendChild(pseudoLink);
         postList.appendChild(postItem);
     }
     btnShow.classList.add('btn_disabled');
